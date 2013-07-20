@@ -1,0 +1,8 @@
+"
+" cfk's pentadactylrc
+"
+
+set guioptions+=mT
+
+" You need to install the DuckDuckGo search bar add-on first
+set defsearch=duckduckgo

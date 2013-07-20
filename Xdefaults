@@ -1,0 +1,64 @@
+!! CFK's .Xdefaults -- cfkoch@sdf.lonestar.org
+
+!! xterm
+xterm*background: black
+xterm*foreground: white
+!xterm*font:       -*-lucidatypewriter-*-r-*-*-24-*-*-*-*-*-*-*
+xterm*font:       -*-lucidatypewriter-*-r-*-*-14-*-*-*-*-*-*-*
+!xterm*font:       xft:Monaco:style=Regular:size=9 
+!xterm*font:       -chris2-fixed-medium-r-condensed--13-120-75-75-c-50-iso10646-1
+!xterm*font:       -chris2-sq-Medium-R-Normal--15-140-75-75-C-100-ISO8859-1
+
+!! xload
+xload*update:     2
+xload*background: black
+xload*foreground: deeppink
+xload*highlight:  white
+
+!! NetHack
+NetHack*background: gray15
+NetHack*foreground: gray65
+
+!! My preferred lock animation. Note "XLock*mode" doesn't work.
+XLock.mode: bubble
+XLock.background: black
+XLock.foreground: white
+
+!! For all urxvt themes:
+urxvt*reverseVideo: False
+urxvt*scrollBar: False
+urxvt*perl-ext-common: default,tabbed
+
+!urxvt*font: xft:Bitstream\ Vera\ Sans\ Mono:style=roman:pixelsize=12
+urxvt*font: -chris2-sq-Medium-R-Normal--15-140-75-75-C-100-ISO8859-1
+
+!! CFK's urxvt theme
+urxvt*transparent:     True
+urxvt*background:      white
+urxvt*foreground:      black
+!urxvt*font:            -*-lucidatypewriter-*-r-*-*-12-*-*-*-*-*-*-*
+!urxvt*font:            xft:Monaco:style=Regular:size=9
+!urxvt*geometry:        129x62
+
+!! urxvt_tango_theme_by_yorikvanhavre from deviantART
+urxvt*foreground: #f2f2f2
+urxvt*background: #000000
+urxvt*color0: #101010
+urxvt*color1: #f13a21
+urxvt*color2: #93f91d
+urxvt*color3: #ffd00a
+urxvt*color4: #004f9e
+urxvt*color5: #ec0048
+urxvt*color6: #2aa7e7
+urxvt*color7: #f2f2f2
+urxvt*color8: #1d202f
+urxvt*color9: #ff361e
+urxvt*color10: #ffc005
+urxvt*color11: #93ff00
+urxvt*color12: #0071ff
+urxvt*color13: #ef0051
+urxvt*color14: #4bb8fd
+urxvt*color15: #a020f0
+urxvt*transparent: true
+urxvt*shading: 15
+!urxvt*fading: 85

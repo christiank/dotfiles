@@ -1,0 +1,173 @@
+#
+# CFK's .fluxbox/menu
+#
+
+[begin] (fluxbox)
+[encoding] {iso8859-1}
+
+[exec] (urxvt) {urxvt}
+[exec] (firefox) {/home/christian/bin/firefox}
+
+[separator]
+
+[exec] (Run...) {fbrun}
+
+[separator]
+
+[exec] (pidgin) {pidgin}
+
+[submenu] (Editors)
+  [exec] (gvim) {gvim}
+  [exec] (vim) {Eterm -e vim}
+  [exec] (vi) {Eterm -e vi}
+[end]
+
+[submenu] (Multimedia)
+  [exec] (Gimp) {gimp}
+  [exec] (Inkscape) {inkscape}
+  [exec] (Quod Libet) {quodlibet}
+  [exec] (Reload .Xdefaults) {xrdb -load $HOME/.Xdefaults}
+[end]
+
+[submenu] (Games)
+  [submenu] (NetHack)
+    [exec] (Falcon's Eye) {falcons-eye}
+    [exec] (NetHack X11) {nethack-x11}
+  [end]
+
+  [submenu] (Neverball)
+    [exec] (Neverball) {neverball}
+    [exec] (Neverputt) {neverputt}
+  [end]
+
+  [submenu] (Pioneers)
+    [exec] (Pioneers) {pioneers}
+    [exec] (Pioneers Server) {pioneers-server-gtk}
+  [end]
+
+  [exec] (The Battle for Wesnoth) {wesnoth}
+  [exec] (Pingus) {pingus}
+[end]
+
+[submenu] (Fluxbox menu)
+  [config] (Configure)
+
+  [submenu] (System Styles) {Choose a style...}
+    [stylesdir] (/usr/pkg/share/fluxbox/styles)
+  [end]
+
+  [submenu] (tenr.de styles) {Choose a style...}
+    [submenu] (0-9)
+      [stylesdir] (~/.fluxbox/styles/0-9)
+    [end]
+    [submenu] (a)
+      [stylesdir] (~/.fluxbox/styles/a)
+    [end]
+    [submenu] (b)
+      [stylesdir] (~/.fluxbox/styles/b)
+    [end]
+    [submenu] (c)
+      [stylesdir] (~/.fluxbox/styles/c)
+    [end]
+    [submenu] (d)
+      [stylesdir] (~/.fluxbox/styles/d)
+    [end]
+    [submenu] (e)
+      [stylesdir] (~/.fluxbox/styles/e)
+    [end]
+    [submenu] (f)
+      [stylesdir] (~/.fluxbox/styles/f)
+    [end]
+    [submenu] (g)
+      [stylesdir] (~/.fluxbox/styles/g)
+    [end]
+    [submenu] (h)
+      [stylesdir] (~/.fluxbox/styles/h)
+    [end]
+    [submenu] (i)
+      [stylesdir] (~/.fluxbox/styles/i)
+    [end]
+    [submenu] (j)
+      [stylesdir] (~/.fluxbox/styles/j)
+    [end]
+    [submenu] (k)
+      [stylesdir] (~/.fluxbox/styles/k)
+    [end]
+    [submenu] (l)
+      [stylesdir] (~/.fluxbox/styles/l)
+    [end]
+    [submenu] (m)
+      [stylesdir] (~/.fluxbox/styles/m)
+    [end]
+    [submenu] (n)
+      [stylesdir] (~/.fluxbox/styles/n)
+    [end]
+    [submenu] (o)
+      [stylesdir] (~/.fluxbox/styles/o)
+    [end]
+    [submenu] (p)
+      [stylesdir] (~/.fluxbox/styles/p)
+    [end]
+    [submenu] (q)
+      [stylesdir] (~/.fluxbox/styles/q)
+    [end]
+    [submenu] (r)
+      [stylesdir] (~/.fluxbox/styles/r)
+    [end]
+    [submenu] (s)
+      [stylesdir] (~/.fluxbox/styles/s)
+    [end]
+    [submenu] (t)
+      [stylesdir] (~/.fluxbox/styles/t)
+    [end]
+    [submenu] (u)
+      [stylesdir] (~/.fluxbox/styles/u)
+    [end]
+    [submenu] (v)
+      [stylesdir] (~/.fluxbox/styles/v)
+    [end]
+    [submenu] (w)
+      [stylesdir] (~/.fluxbox/styles/w)
+    [end]
+    [submenu] (x)
+      [stylesdir] (~/.fluxbox/styles/x)
+    [end]
+    [submenu] (y)
+      [stylesdir] (~/.fluxbox/styles/y)
+    [end]
+    [submenu] (z)
+      [stylesdir] (~/.fluxbox/styles/z)
+    [end]
+  [end]
+
+  [workspaces] (Workspace List)
+
+  [submenu] (Tools)
+    [exec] (fluxconf) {fluxconf}
+    [exec] (fluxkeys) {fluxkeys}
+    [exec] (fluxmenu) {fluxmenu}
+    [exec] (Fluxbox panel) {fbpanel}
+    [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|gxmessage -file - -center}
+    [exec] (Screenshot) {scrot /tmp/screenshot.png && display -resize 50% /tmp/screenshot.png}
+    [exec] (Run) {fbrun}
+    [exec] (Regen Menu) {fluxbox-generate_menu }
+  [end]
+
+  [submenu] (Window Managers)
+    [restart] (twm) {starttwm}
+    [restart] (ratpoison) {ratpoison}
+  [end]
+
+  [exec] (Lock screen) {xlock}
+  [commanddialog] (Fluxbox Command)
+  [reconfig] (Reload config)
+  [restart] (Restart)
+  [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) | xmessage -file - -center}
+
+  [separator]
+
+  [exit] (Exit)
+[end]
+
+[endencoding]
+[end]

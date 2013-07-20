@@ -1,0 +1,6 @@
+#
+# cfk's .libao
+#
+
+default_driver=sun
+#default_driver=nas
