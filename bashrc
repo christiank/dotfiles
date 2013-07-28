@@ -36,6 +36,7 @@ export MANPATH
 # Favorites
 export EDITOR=vim
 export NETHACKOPTIONS=color,hilite_pet,lit_corridor,
+export PAGER=less
 
 if [ -z "$DISPLAY" ]; then
   # Works best on NetBSD 6 if /etc/ttys specifies "vt220"
