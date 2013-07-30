@@ -38,6 +38,9 @@ export EDITOR=vim
 export NETHACKOPTIONS=color,hilite_pet,lit_corridor,
 export PAGER=less
 
+export ACRONYMDB="/usr/share/misc/acronyms /usr/share/misc/acronyms.comp
+/home/christian/docs/acronyms.cfkoch"
+
 if [ -z "$DISPLAY" ]; then
   # Works best on NetBSD 6 if /etc/ttys specifies "vt220"
   # Not PERFECT w/in tmux....
