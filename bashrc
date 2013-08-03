@@ -2,15 +2,6 @@
 # cfk's .bashrc
 #
 
-if [ ! -z $(which -a mixerctl) ] ; then
-  # Turn off input from microphone next to webcam (Sony Vaio)
-  # TODO This should be in some sort of script at boot, higher up
-  mixerctl -n -w inputs.record2.mute=on
-
-  # Turn off the system beep
-  mixerctl -n -w inputs.beep2.mute=on
-fi
-
 # Locale
 export LC_ALL="en_US.ISO8859-15"
 
