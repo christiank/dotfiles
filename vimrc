@@ -38,15 +38,17 @@ autocmd BufNewFile,BufRead *.ly setlocal filetype=tex
 autocmd BufNewFile,BufRead *.svg setlocal filetype=xml
 autocmd BufNewFile,BufRead *.pir,*.pasm setlocal filetype=parrot
 autocmd BufNewFile,BufRead *.m setlocal filetype=objc
+autocmd BufNewFile,BufRead *.spread setlocal filetype=spread
 
 " these formats don't have 76-char limits
-autocmd BufNewFile,BufRead *.html,*.erb,*.textile setlocal textwidth=0
+autocmd BufNewFile,BufRead *.html,*.erb,*.textile,*.spread setlocal textwidth=0
 autocmd BufNewFile,BufRead *.screenplay setlocal textwidth=60
 
 " these formats have spell-checking on by default
 autocmd BufNewFile,BufRead *.txt,*.tex,*.md,*.markdown,*.screenplay setlocal spell
 
 " Special indentation rules for these languages with finicky syntax 
+autocmd FileType spread setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab nospell nolist nolinebreak nowrap
 autocmd FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
