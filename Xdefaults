@@ -15,6 +15,17 @@ xload*background: black
 xload*foreground: deeppink
 xload*highlight:  white
 
+!! ical
+Ical.weekdayColor: black
+Ical.weekendColor: black
+Ical.interestColor: deeppink
+Ical.weekendInterestColor: deeppink
+Ical.fontFamily: helvetica
+Ical.weekdayFont: helvetica
+Ical.weekendFont: helvetica
+Ical.interestFont: helvetica
+Ical.weekendInterestFont: helvetica
+
 !! NetHack
 NetHack*background: gray15
 NetHack*foreground: gray65
