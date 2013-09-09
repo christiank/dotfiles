@@ -39,8 +39,8 @@ if [ -z "$DISPLAY" ]; then
   export TERM=wsvt25
 else
   #export TERM=color_xterm
-  #export TERM=rxvt-color # Since I'm using rxvt-unicode...
-  export TERM=st
+  export TERM=rxvt-color # Since I'm using rxvt-unicode...
+  #export TERM=st
 fi
 
 # Collection of aliases
