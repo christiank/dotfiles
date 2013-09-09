@@ -45,6 +45,11 @@
     [exec] (Pioneers Server) {pioneers-server-gtk}
   [end]
 
+  [submenu] (Descent)
+    [exec] (Descent) {d1x-rebirth}
+    [exec] (Descent II) {d2x-rebirth}
+  [end]
+
   [exec] (The Battle for Wesnoth) {wesnoth}
   [exec] (Pingus) {pingus}
 [end]
