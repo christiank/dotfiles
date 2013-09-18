@@ -18,6 +18,7 @@
 
 [submenu] (Editors)
   [exec] (gvim) {gvim}
+  [exec] (AbiWord) {abiword}
   [exec] (vim) {Eterm -e vim}
   [exec] (vi) {Eterm -e vi}
 [end]
