@@ -28,9 +28,11 @@ color indicator black green
 color search black yellow
 color error black red
 color tilde brightblack default
-color quoted yellow default
 color attachment cyan default
 color status black white 
+
+color quoted yellow default
+color quoted2 green default
 
 ### SIDEBAR PATCH
 #set sidebar_width=20
