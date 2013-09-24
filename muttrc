@@ -1,0 +1,46 @@
+# CFK's .muttrc
+
+# Most recent messages at the top, but sorted by thread
+set sort=reverse-threads
+set folder=/home/christian/email/sdf 
+#mailboxes INBOX pyt-peterpan ...
+
+# Only show the headers I care about
+set weed
+ignore *
+unignore from to cc subject date
+
+# Order of headers when viewing a message
+unhdr_order *
+hdr_order date from to cc subject
+
+# IMAP stuff
+#unset imap_pass # Force a password prompt
+#set imap_user=cfkoch
+
+# Misc.
+set tilde  # Show tilde for blank lines (like vi)
+set pager_index_lines=10  # Split view
+
+# Colors! 
+color header brightgreen default "subject"
+color indicator black green
+color search black yellow
+color error black red
+color tilde brightblack default
+color quoted yellow default
+color attachment cyan default
+color status black white 
+
+### SIDEBAR PATCH
+#set sidebar_width=20
+#set sidebar_visible
+#
+## ctrl-n, ctrl-p to select next, prev folder
+## ctrl-o to open selected folder
+#bind index \CP sidebar-prev
+#bind index \CN sidebar-next
+#bind index \CO sidebar-open
+#bind pager \CP sidebar-prev
+#bind pager \CN sidebar-next
+#bind pager \CO sidebar-open
