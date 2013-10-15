@@ -39,6 +39,7 @@ autocmd BufNewFile,BufRead *.svg setlocal filetype=xml
 autocmd BufNewFile,BufRead *.pir,*.pasm setlocal filetype=parrot
 autocmd BufNewFile,BufRead *.m setlocal filetype=objc
 autocmd BufNewFile,BufRead *.spread setlocal filetype=spread
+autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 
 " these formats don't have 76-char limits
 autocmd BufNewFile,BufRead *.html,*.erb,*.textile,*.spread setlocal textwidth=0
@@ -53,7 +54,7 @@ autocmd FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
 
 " force the default filetype to be no type at all for plain text files
-autocmd BufNewFile,BufRead *.txt,*.md,*.markdown setlocal filetype=none
+autocmd BufNewFile,BufRead *.txt setlocal filetype=none
 
 " more special things
 autocmd BufNewFile,BufRead *.txt.bf setlocal cryptmethod=blowfish
