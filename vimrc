@@ -55,6 +55,9 @@ autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandta
 " force the default filetype to be no type at all for plain text files
 autocmd BufNewFile,BufRead *.txt,*.md,*.markdown setlocal filetype=none
 
+" more special things
+autocmd BufNewFile,BufRead *.txt.bf setlocal cryptmethod=blowfish
+
 if has("gui_running")
   colorscheme molokai
 endif
