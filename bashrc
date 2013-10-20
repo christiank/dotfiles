@@ -50,7 +50,7 @@ else
   alias ls="ls -G"
 fi
 
-alias la="ls -a"
+alias la="ls -A"
 alias ll="ls -l"
 alias lis="ls | less"
 alias dfhl="df -hl"
