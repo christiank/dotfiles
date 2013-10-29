@@ -40,6 +40,7 @@ autocmd BufNewFile,BufRead *.pir,*.pasm setlocal filetype=parrot
 autocmd BufNewFile,BufRead *.m setlocal filetype=objc
 autocmd BufNewFile,BufRead *.spread setlocal filetype=spread
 autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+autocmd BufNewFile,BufRead *.mom setlocal filetype=groff
 
 " these formats don't have 76-char limits
 autocmd BufNewFile,BufRead *.html,*.erb,*.textile,*.spread setlocal textwidth=0
