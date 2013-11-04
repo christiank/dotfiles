@@ -2,6 +2,11 @@
 # cfk's .bashrc
 #
 
+# CFK's per-terminal MOTD mechanism
+if [ -s ${HOME}/.shmotd ]; then
+  cat ${HOME}/.shmotd
+fi
+
 # Locale
 export LC_ALL="en_US.ISO8859-15"
 
