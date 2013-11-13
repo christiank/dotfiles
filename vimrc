@@ -6,6 +6,7 @@ set nocompatible            " take advantage of vim; no vi emulation
 set modelines=5             " recognize those 'vim:' comments in files
 set number                  " turn on line numbering
 set ruler                   " tells me the cursor position always
+set ignorecase              " case-insensitive search patterns by default
 
 set tabstop=2               " a tab character is 2 chars long
 set softtabstop=2           " 2 spaces every time you hit the tab key
