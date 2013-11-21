@@ -31,7 +31,6 @@ export MANPATH
 
 # Favorites
 export EDITOR=vim
-export NETHACKOPTIONS=color,hilite_pet,lit_corridor,
 export PAGER=less
 
 export ACRONYMDB="/usr/share/misc/acronyms
