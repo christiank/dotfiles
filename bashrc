@@ -58,6 +58,7 @@ alias la="ls -A"
 alias ll="ls -l"
 alias lis="ls -F | less"
 alias dfhl="df -hl"
+alias lock="lock -n"
 
 # Volume controls
 if [ ! -z $(which -a mixerctl) ]; then
