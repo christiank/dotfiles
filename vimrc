@@ -12,8 +12,7 @@ set tabstop=2               " a tab character is 2 chars long
 set softtabstop=2           " 2 spaces every time you hit the tab key
 set shiftwidth=2            " 2 spaces for every '>>' command in normal mode
 set expandtab               " tab key inserts spaces, not tab characters
-set autoindent              " auto-indenting
-
+set autoindent              " auto-indenting 
 set guicursor+=a:blinkon0   " turn off cursor blink
                             " (turn off bell in .gvimrc)
 
@@ -60,6 +59,12 @@ autocmd BufNewFile,BufRead *.txt setlocal filetype=none
 
 " more special things
 autocmd BufNewFile,BufRead *.txt.bf setlocal cryptmethod=blowfish
+
+" :hardcopy settings
+set printoptions=
+set printoptions+=paper:letter,formfeed:y
+set printoptions+=left:1in,right:1in,top:1in,bottom:1in
+set printoptions+=syntax:y
 
 if has("gui_running")
   colorscheme molokai
