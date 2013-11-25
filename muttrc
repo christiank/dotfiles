@@ -33,16 +33,3 @@ color status black white
 
 color quoted yellow default
 color quoted2 green default
-
-### SIDEBAR PATCH
-#set sidebar_width=20
-#set sidebar_visible
-#
-## ctrl-n, ctrl-p to select next, prev folder
-## ctrl-o to open selected folder
-#bind index \CP sidebar-prev
-#bind index \CN sidebar-next
-#bind index \CO sidebar-open
-#bind pager \CP sidebar-prev
-#bind pager \CN sidebar-next
-#bind pager \CO sidebar-open
