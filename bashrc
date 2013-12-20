@@ -54,6 +54,7 @@ else
   alias ls="ls -G"
 fi
 
+alias c="clear"
 alias la="ls -A"
 alias ll="ls -l"
 alias lis="ls -F | less"
