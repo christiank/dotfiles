@@ -60,6 +60,13 @@ autocmd BufNewFile,BufRead *.txt setlocal filetype=none
 " more special things
 autocmd BufNewFile,BufRead *.txt.bf setlocal cryptmethod=blowfish
 
+" For whatever reason, these digraphs are missing
+digraph i\" 239
+digraph o\" 246
+digraph u\" 252
+digraph O\" 214
+digraph U\" 220
+
 " :hardcopy settings
 set printoptions=
 set printoptions+=paper:letter,formfeed:y
