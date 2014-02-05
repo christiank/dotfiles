@@ -15,6 +15,7 @@
 [separator]
 
 [exec] (pidgin) {pidgin}
+[exec] (conky) {conky}
 
 [submenu] (Editors)
   [exec] (gvim) {gvim}
