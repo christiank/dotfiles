@@ -163,6 +163,7 @@
   [submenu] (Window Managers)
     [restart] (twm) {starttwm}
     [restart] (ratpoison) {ratpoison}
+    [restart] (ratpoisoncfk-current) {/home/christian/bin/ratpoison}
   [end]
 
   [exec] (Lock screen) {xlock}
