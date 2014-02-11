@@ -30,6 +30,9 @@ colorscheme default
 nmap tt :bn<CR>
 nmap tr :bp<CR>
 
+" :set list fun
+nmap gl :set list!<CR>
+
 " make vim recognize other file extensions
 filetype on
 autocmd BufNewFile,BufRead *.ru setlocal filetype=ruby
