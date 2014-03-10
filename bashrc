@@ -61,6 +61,7 @@ alias lis="ls -F | less"
 alias dfhl="df -hl"
 alias lock="lock -n"
 alias curloclippaste="curl -O $(clippaste)"
+alias grep="grep -iE"
 
 # Volume controls
 if [ ! -z $(which -a mixerctl) ]; then
