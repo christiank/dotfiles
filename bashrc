@@ -18,7 +18,7 @@ PATH=${HOME}/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R7/bin:/usr/pkg/bin
 PATH=${PATH}:/usr/pkg/sbin:/usr/games:/usr/local/bin:/usr/local/sbin
 PATH=${PATH}:/usr/local/heroku/bin
 #PATH=${PATH}:/tmp/avn/bin
-GOROOT=${HOME}/bin
+GOROOT=${HOME}/devel/clones/go
 
 MANPATH=/usr/share/man:/usr/X11R7/man:/usr/local/share/man:/usr/local/man:/usr/pkg/man
 
