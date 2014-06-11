@@ -58,7 +58,7 @@ autocmd BufNewFile,BufRead *.txt,*.tex,*.md,*.markdown,*.screenplay setlocal spe
 " Special indentation rules for these languages with finicky syntax 
 autocmd FileType spread setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab nospell nolist nolinebreak nowrap
 autocmd FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
-autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
 
 " force the default filetype to be no type at all for plain text files
 autocmd BufNewFile,BufRead *.txt setlocal filetype=none
