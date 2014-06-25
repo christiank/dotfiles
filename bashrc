@@ -21,6 +21,7 @@ PATH=${PATH}:/usr/local/heroku/bin
 
 export GOROOT=${HOME}/devel/clones/go
 export GOPATH=${HOME}/devel/gocode
+export JAVA_HOME=/usr/pkg/java/openjdk7
 
 MANPATH=/usr/share/man:/usr/X11R7/man:/usr/local/share/man:/usr/local/man:/usr/pkg/man
 
