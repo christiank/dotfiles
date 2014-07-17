@@ -1,6 +1,4 @@
-#
 # cfk's .bashrc
-#
 
 # CFK's per-terminal MOTD mechanism
 if [ -s ${HOME}/.shmotd ]; then
@@ -17,7 +15,6 @@ export PS1="\[\e[0;33m\]\u@\h:\w\[\e[0m\] "
 PATH=${HOME}/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R7/bin:/usr/pkg/bin
 PATH=${PATH}:/usr/pkg/sbin:/usr/games:/usr/local/bin:/usr/local/sbin
 PATH=${PATH}:/usr/local/heroku/bin
-#PATH=${PATH}:/tmp/avn/bin
 
 export GOROOT=${HOME}/devel/clones/go
 export GOPATH=${HOME}/devel/gocode
@@ -64,7 +61,6 @@ alias ll="ls -l"
 alias lis="ls -F | less"
 alias dfhl="df -hl"
 alias lock="lock -n"
-alias curloclippaste="curl -O $(clippaste)"
 alias grep="grep -iE"
 
 # Volume controls
