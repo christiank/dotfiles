@@ -82,3 +82,6 @@ set printoptions+=syntax:y
 if has("gui_running")
   colorscheme molokai
 endif
+
+" Create a new temporary file with a random name
+command! Temporary execute 'edit' tempname()
