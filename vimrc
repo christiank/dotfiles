@@ -33,6 +33,9 @@ nmap tr :bp<CR>
 " :set list fun
 nmap gl :set list!<CR>
 
+" :toggle search highlighting
+nmap g/ :set hlsearch!<CR>
+
 " make vim recognize other file extensions
 filetype on
 autocmd BufNewFile,BufRead *.ru setlocal filetype=ruby
