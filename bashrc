@@ -6,7 +6,7 @@ if [ -s ${HOME}/.shmotd ]; then
 fi
 
 # Locale
-export LC_ALL="en_US.ISO8859-15"
+#export LC_ALL="utf-8"
 
 # Color prompt
 export PS1="\[\e[0;33m\]\u@\h:\w\[\e[0m\] "
@@ -38,15 +38,7 @@ export ACRONYMDB="/usr/share/misc/acronyms
 /usr/share/misc/acronyms.comp
 /home/christian/docs/acronyms.cfkoch"
 
-if [ -z "$DISPLAY" ]; then
-  # Works best on NetBSD 6 if /etc/ttys specifies "vt220"
-  # Not PERFECT w/in tmux....
-  export TERM=wsvt25
-else
-  #export TERM=color_xterm
-  export TERM=rxvt-color # Since I'm using rxvt-unicode...
-  #export TERM=st
-fi
+export TERM=xterm-color
 
 # Collection of aliases
 if [ ! -z $(which -a colorls) ]; then
