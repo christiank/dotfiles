@@ -9,7 +9,7 @@ fi
 #export LC_ALL="utf-8"
 
 # Color prompt
-export PS1="\[\e[0;33m\]\u@\h:\w\[\e[0m\] "
+export PS1="\[\e[0;32m\]\u@\h:\w\[\e[0m\] "
 
 # paths junk
 PATH=${HOME}/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R7/bin:/usr/pkg/bin
