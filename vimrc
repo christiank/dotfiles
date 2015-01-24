@@ -50,6 +50,7 @@ autocmd BufNewFile,BufRead *.mom setlocal filetype=groff
 autocmd BufNewFile,BufRead *.go setlocal filetype=go
 autocmd BufNewFile,Bufread Kyuafile setlocal filetype=lua
 autocmd BufNewFile,Bufread *.haml setlocal filetype=haml
+autocmd BufNewFile,BufRead *.rs setlocal filetype=rust
 
 " these formats don't have 76-char limits
 autocmd BufNewFile,BufRead *.html,*.erb,*.textile,*.spread setlocal textwidth=0
