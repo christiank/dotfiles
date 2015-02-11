@@ -42,8 +42,8 @@ urxvt*scrollBar: False
 urxvt*transparent: true
 urxvt*shading: 10
 
-!urxvt*font: xft:Bitstream\ Vera\ Sans\ Mono:style=roman:pixelsize=12
-urxvt*font: -chris2-sq-Medium-R-Normal--15-140-75-75-C-100-ISO8859-1
+urxvt*font: xft:Bitstream\ Vera\ Sans\ Mono:style=roman:pixelsize=12
+!urxvt*font: -chris2-sq-Medium-R-Normal--15-140-75-75-C-100-ISO8859-1
 
 !! ========== !!
 
@@ -151,7 +151,7 @@ urxvt*color6: #2aa7e7
 urxvt*color7: #f2f2f2
 urxvt*color8: #1d202f
 urxvt*color9: #ff0000
-urxvt*color10: #93ff00 
+urxvt*color10: #93ff00
 urxvt*color11: #f98100
 urxvt*color12: #0071ff
 urxvt*color13: #ef0051

@@ -54,6 +54,7 @@ alias lis="ls -F | less"
 alias dfhl="df -hl"
 alias lock="lock -n"
 alias grep="grep -iE"
+alias virtbox="open -a virtualbox"
 
 # Volume controls
 if [ ! -z $(which -a mixerctl) ]; then

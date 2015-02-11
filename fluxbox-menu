@@ -1,6 +1,6 @@
 [begin] (fluxbox) {} <>
     [encoding] () {iso8859-1} <>
-    [exec] (urxvt) {urxvt} <>
+    [exec] (urxvt) {/usr/pkg/bin/urxvt} <>
     [exec] (firefox) {/home/christian/bin/firefox} <>
     [separator] () {} <>
     [exec] (Run...) {fbrun} <>
