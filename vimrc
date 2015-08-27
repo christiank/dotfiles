@@ -88,3 +88,6 @@ endif
 
 " Create a new temporary file with a random name
 command! Temporary execute 'edit' tempname()
+
+" Pathogen!
+execute pathogen#infect()
