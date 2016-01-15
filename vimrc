@@ -90,4 +90,4 @@ endif
 command! Temporary execute 'edit' tempname()
 
 " Pathogen!
-execute pathogen#infect()
+"execute pathogen#infect()
