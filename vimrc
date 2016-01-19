@@ -48,8 +48,10 @@ autocmd BufNewFile,BufRead *.spread setlocal filetype=spread
 autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 autocmd BufNewFile,BufRead *.mom setlocal filetype=groff
 autocmd BufNewFile,BufRead *.go setlocal filetype=go
-autocmd BufNewFile,Bufread Kyuafile setlocal filetype=lua
-autocmd BufNewFile,Bufread *.haml setlocal filetype=haml
+autocmd BufNewFile,BufRead Kyuafile setlocal filetype=lua
+autocmd BufNewFile,BufRead *.haml setlocal filetype=haml
+autocmd BufNewFile,BufRead *.jbo setlocal filetype=lojban
+autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake nospell
 
 " these formats don't have 76-char limits
 autocmd BufNewFile,BufRead *.html,*.erb,*.textile,*.spread setlocal textwidth=0
@@ -60,14 +62,15 @@ autocmd BufNewFile,BufRead *.txt,*.tex,*.md,*.markdown,*.screenplay setlocal spe
 
 " Special indentation rules for these languages with finicky syntax 
 autocmd FileType spread setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab nospell nolist nolinebreak nowrap
-autocmd FileType make setlocal tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
-autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
+autocmd FileType make setlocal tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab
+autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " force the default filetype to be no type at all for plain text files
 autocmd BufNewFile,BufRead *.txt setlocal filetype=none
 
 " more special things
 autocmd BufNewFile,BufRead *.txt.bf setlocal cryptmethod=blowfish
+autocmd BufNewFile,BufRead *.c,*.h setlocal noet ts=2 sts=2 sw=2
 
 " For whatever reason, these digraphs are missing
 digraph i\" 239
