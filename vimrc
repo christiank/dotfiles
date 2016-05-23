@@ -51,7 +51,8 @@ autocmd BufNewFile,BufRead *.go setlocal filetype=go
 autocmd BufNewFile,BufRead Kyuafile setlocal filetype=lua
 autocmd BufNewFile,BufRead *.haml setlocal filetype=haml
 autocmd BufNewFile,BufRead *.jbo setlocal filetype=lojban
-autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake nospell
+autocmd BufNewFile,BufRead Hulafile setlocal filetype=ruby
+autocmd BufNewFile,BufRead *.json setlocal filetype=javascript
 
 " these formats don't have 76-char limits
 autocmd BufNewFile,BufRead *.html,*.erb,*.textile,*.spread setlocal textwidth=0
@@ -71,6 +72,9 @@ autocmd BufNewFile,BufRead *.txt setlocal filetype=none
 " more special things
 autocmd BufNewFile,BufRead *.txt.bf setlocal cryptmethod=blowfish
 autocmd BufNewFile,BufRead *.c,*.h setlocal noet ts=2 sts=2 sw=2
+
+" Has .txt extension but is not a 'text' file as such
+autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake nospell
 
 " For whatever reason, these digraphs are missing
 digraph i\" 239

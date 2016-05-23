@@ -6,7 +6,7 @@ if [ -s ${HOME}/.shmotd ]; then
 fi
 
 # Locale
-export LC_ALL="en_US.ISO8859-15"
+export LC_ALL="en_US.UTF-8"
 
 # Color prompt
 export PS1="\[\e[0;33m\]\u@\h:\w\[\e[0m\] "
@@ -16,8 +16,6 @@ PATH=${HOME}/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R7/bin:/usr/pkg/bin
 PATH=${PATH}:/usr/pkg/sbin:/usr/games:/usr/local/bin:/usr/local/sbin
 PATH=${PATH}:/usr/local/heroku/bin
 
-export GOROOT=${HOME}/devel/clones/go
-export GOPATH=${HOME}/devel/gocode
 export JAVA_HOME=/usr/pkg/java/openjdk7
 
 MANPATH=/usr/share/man:/usr/X11R7/man:/usr/local/share/man:/usr/local/man:/usr/pkg/man
@@ -41,11 +39,12 @@ export ACRONYMDB="/usr/share/misc/acronyms
 if [ -z "$DISPLAY" ]; then
   # Works best on NetBSD 6 if /etc/ttys specifies "vt220"
   # Not PERFECT w/in tmux....
-  export TERM=wsvt25
+  #export TERM=wsvt25
+  export TERM=screen
 else
   #export TERM=color_xterm
-  export TERM=rxvt-color # Since I'm using rxvt-unicode...
-  #export TERM=st
+  #export TERM=rxvt-color # Since I'm using rxvt-unicode...
+  export TERM=xterm-color
 fi
 
 # Collection of aliases
